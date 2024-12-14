@@ -187,7 +187,7 @@ spawn(function()
                             if _v.Name == tostring(ChackQ()["Mon"]) and _v:FindFirstChild("Humanoid") and _v:FindFirstChild("HumanoidRootPart") then
                                 if _v.Humanoid.Health > 0 then
                                     repeat wait()
-                                        TW(_v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(5,28,5))
+                                        TW(_v:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(4,4.9,4))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(4000,1272))
                                     until not _G.AutoFarm or _G.AutoFarm == false or not _v.Parent or _v.Humanoid.Health <= 0 or not UIQ.Visible or UIQ.Visible == false
